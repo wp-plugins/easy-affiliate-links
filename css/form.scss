@@ -1,0 +1,95 @@
+.quicktags-toolbar input[value="easy affiliate link"] {
+  text-decoration: underline;
+}
+
+.eafl_form {
+  width: 100%;
+  border-collapse: collapse;
+
+  td {
+    vertical-align: middle;
+    height: 45px;
+
+    &:nth-child(1) {
+      width: 20%;
+      text-align: right;
+    }
+
+    &:nth-child(2) {
+      width: 50%;
+      padding: 0 10px;
+      input[type="text"] {
+        width: 100%;
+      }
+    }
+
+    &:nth-child(3) {
+      width: 30%;
+      font-size: 12px;
+      color: #666;
+    }
+  }
+
+  .eafl_divider td {
+    border-bottom: 1px solid #ddd;
+  }
+
+  .eafl_link_preview td {
+    vertical-align: top;
+    height: 20px;
+
+    &:nth-child(2) {
+      width: 80%;
+      font-size: 12px;
+      color: #666;
+    }
+  }
+
+  .eafl_radiobuttons td {
+    vertical-align: top;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    input[type="radio"] {
+      margin: 0 5px 5px 0;
+    }
+
+    label {
+      vertical-align: top;
+    }
+  }
+}
+
+#eafl_add_from_lightbox {
+  p.submit {
+    text-align: right;
+    margin-top: 0;
+    padding-right: 30px;
+  }
+}
+
+#eafl_select_link {
+  width: 100%;
+  border-collapse: collapse;
+
+  th {
+    text-align: left;
+  }
+
+  td {
+    vertical-align: top;
+    border-top: 1px solid #ddd;
+    padding: 4px 0;
+
+    &:nth-child(1) { width: 10%; vertical-align: middle; }
+    &:nth-child(2) { width: 40%; }
+    &:nth-child(3) { width: 30%; }
+    &:nth-child(4) { width: 20%; }
+  }
+}
+
+.eafl_shortlink {
+  display: block;
+  font-size: 12px;
+  color: #666;
+}

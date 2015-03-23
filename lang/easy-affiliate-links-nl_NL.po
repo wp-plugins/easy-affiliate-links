@@ -1,0 +1,542 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Easy Affiliate Links\n"
+"POT-Creation-Date: 2015-03-20 17:12+0100\n"
+"PO-Revision-Date: 2015-03-20 17:24+0100\n"
+"Last-Translator: Brecht Vandersmissen <brecht.vandersmissen@gmail.com>\n"
+"Language-Team: Bootstrapped Ventures\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.7.4\n"
+"X-Poedit-Basepath: /Users/Brecht/Development/WordPress Plugins/\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_x\n"
+"Language: nl_NL\n"
+"X-Poedit-SearchPath-0: easy-affiliate-links\n"
+
+#: easy-affiliate-links/helpers/assets.php:41
+#: easy-affiliate-links/helpers/post_type.php:29
+#: easy-affiliate-links/helpers/taxonomies.php:22
+msgid "Search"
+msgstr "Zoeken"
+
+#: easy-affiliate-links/helpers/cache.php:20
+msgid "The cache has been reset"
+msgstr "De cache werd gereset"
+
+#: easy-affiliate-links/helpers/columns.php:13
+#: easy-affiliate-links/helpers/columns.php:50
+#: easy-affiliate-links/helpers/editor_button_lightbox.php:20
+msgid "Link"
+msgstr "Link"
+
+#: easy-affiliate-links/helpers/columns.php:49
+#: easy-affiliate-links/helpers/editor_button_lightbox.php:19
+#: easy-affiliate-links/helpers/meta_box_content.php:9
+#: easy-affiliate-links/helpers/taxonomies.php:28
+msgid "Name"
+msgstr "Naam"
+
+#: easy-affiliate-links/helpers/columns.php:52
+msgid "Link Categories"
+msgstr "Link Categoriën"
+
+#: easy-affiliate-links/helpers/columns.php:53
+msgid "Date"
+msgstr "Datum"
+
+#: easy-affiliate-links/helpers/editor_button_lightbox.php:11
+msgid "Select Link"
+msgstr "Selecteer Link"
+
+#: easy-affiliate-links/helpers/editor_button_lightbox.php:12
+#: easy-affiliate-links/helpers/editor_button_lightbox.php:48
+msgid "Add Link"
+msgstr "Link Toevoegen"
+
+#: easy-affiliate-links/helpers/editor_button_lightbox.php:21
+msgid "Category"
+msgstr "Categorie"
+
+#: easy-affiliate-links/helpers/editor_button_lightbox.php:29
+msgid "Use"
+msgstr "Gebruik"
+
+#: easy-affiliate-links/helpers/meta_box_content.php:11
+msgid "Use this to identify the link."
+msgstr "Gebruik dit om de link te identificeren."
+
+#: easy-affiliate-links/helpers/meta_box_content.php:11
+msgid "Not public."
+msgstr "Niet publiek."
+
+#: easy-affiliate-links/helpers/meta_box_content.php:14
+msgid "Link Text"
+msgstr "Link Tekst"
+
+#: easy-affiliate-links/helpers/meta_box_content.php:16
+msgid "Text shown to visitors."
+msgstr "Tekst getoond aan je bezoekers."
+
+#: easy-affiliate-links/helpers/meta_box_content.php:19
+msgid "Link URL"
+msgstr "Link URL"
+
+#: easy-affiliate-links/helpers/meta_box_content.php:21
+msgid "Final destination for the link."
+msgstr "Uiteindelijk doel van de link."
+
+#: easy-affiliate-links/helpers/meta_box_content.php:21
+msgid "Starts with http:// or https://"
+msgstr "Begint met http:// of https://"
+
+#: easy-affiliate-links/helpers/meta_box_content.php:24
+msgid "Shortlink Slug"
+msgstr "Shortlink Slug"
+
+#: easy-affiliate-links/helpers/meta_box_content.php:27
+msgid "Part of the link your visitors will see."
+msgstr "Deel van de link dat je bezoekers zullen zien."
+
+#: easy-affiliate-links/helpers/meta_box_content.php:36
+msgid "Target"
+msgstr "Doel"
+
+#: easy-affiliate-links/helpers/meta_box_content.php:40
+#: easy-affiliate-links/helpers/vafpress/vafpress_menu_options.php:51
+msgid "Open in same tab"
+msgstr "Open in zelfde tabblad"
+
+#: easy-affiliate-links/helpers/meta_box_content.php:41
+#: easy-affiliate-links/helpers/vafpress/vafpress_menu_options.php:55
+msgid "Open in new tab"
+msgstr "Open in nieuw tabblad"
+
+#: easy-affiliate-links/helpers/meta_box_content.php:48
+#: easy-affiliate-links/helpers/meta_box_content.php:72
+#: easy-affiliate-links/helpers/meta_box_content.php:95
+msgid "Use Default"
+msgstr "Standaardinstelling"
+
+#: easy-affiliate-links/helpers/meta_box_content.php:56
+msgid "Target to use for the shortlink."
+msgstr "Doel om te gebruiken voor de shortlink."
+
+#: easy-affiliate-links/helpers/meta_box_content.php:59
+msgid "Redirect Type"
+msgstr "Redirect Type"
+
+#: easy-affiliate-links/helpers/meta_box_content.php:63
+#: easy-affiliate-links/helpers/vafpress/vafpress_menu_options.php:69
+msgid "301 Permanent"
+msgstr "301 Permanent"
+
+#: easy-affiliate-links/helpers/meta_box_content.php:64
+#: easy-affiliate-links/helpers/vafpress/vafpress_menu_options.php:73
+msgid "302 Temporary"
+msgstr "302 Tijdelijk"
+
+#: easy-affiliate-links/helpers/meta_box_content.php:65
+#: easy-affiliate-links/helpers/vafpress/vafpress_menu_options.php:77
+msgid "307 Temporary"
+msgstr "307 Tijdelijk"
+
+#: easy-affiliate-links/helpers/meta_box_content.php:80
+msgid "Redirect type to use for the shortlink."
+msgstr "Redirect type om the gebruiken voor de shortlink."
+
+#: easy-affiliate-links/helpers/meta_box_content.php:83
+msgid "Nofollow"
+msgstr "Nofollow"
+
+#: easy-affiliate-links/helpers/meta_box_content.php:87
+msgid "Do not add nofollow attribute"
+msgstr "Nofollow attribuut niet toevoegen"
+
+#: easy-affiliate-links/helpers/meta_box_content.php:88
+msgid "Add nofollow attribute"
+msgstr "Nofollow attribuut toevoegen"
+
+#: easy-affiliate-links/helpers/meta_box_content.php:103
+msgid "Should we add the nofollow attribute to links."
+msgstr "Moet het nofollow attribuut worden toegevoegd aan links."
+
+#: easy-affiliate-links/helpers/notices.php:15
+msgid ""
+"Our plugin depends on pretty permalinks. Please choose anything but the "
+"default setting over here:"
+msgstr ""
+"Onze plugin maakt gebruik van pretty permalinks. Gelieve iets anders dan de "
+"standaard instelling te gebruiken:"
+
+#: easy-affiliate-links/helpers/notices.php:15
+msgid "Permalink Settings"
+msgstr "Permalink Instellingen"
+
+#: easy-affiliate-links/helpers/plugin_action_link.php:13
+msgid "More information"
+msgstr "Meer informatie"
+
+#: easy-affiliate-links/helpers/post_type.php:14
+msgid "Affiliate Links"
+msgstr "Affiliate Links"
+
+#: easy-affiliate-links/helpers/post_type.php:15
+msgid "Affiliate Link"
+msgstr "Affiliate Link"
+
+#: easy-affiliate-links/helpers/post_type.php:22
+#: easy-affiliate-links/helpers/post_type.php:23
+#: easy-affiliate-links/helpers/taxonomies.php:27
+msgid "Add New"
+msgstr "Toevoegen"
+
+#: easy-affiliate-links/helpers/post_type.php:24
+#: easy-affiliate-links/helpers/post_type.php:25
+#: easy-affiliate-links/helpers/taxonomies.php:25
+msgid "Edit"
+msgstr "Bewerken"
+
+#: easy-affiliate-links/helpers/post_type.php:26
+#: easy-affiliate-links/helpers/taxonomies.php:28
+msgid "New"
+msgstr "Nieuwe"
+
+#: easy-affiliate-links/helpers/post_type.php:27
+#: easy-affiliate-links/helpers/post_type.php:28
+msgid "View"
+msgstr "Bekijk"
+
+#: easy-affiliate-links/helpers/post_type.php:30
+#: easy-affiliate-links/helpers/post_type.php:31
+#: easy-affiliate-links/helpers/taxonomies.php:32
+msgid "No"
+msgstr "Geen"
+
+#: easy-affiliate-links/helpers/post_type.php:30
+#: easy-affiliate-links/helpers/taxonomies.php:32
+msgid "found."
+msgstr "gevonden."
+
+#: easy-affiliate-links/helpers/post_type.php:31
+msgid "found in trash."
+msgstr "gevonden in de vuilbak."
+
+#: easy-affiliate-links/helpers/post_type.php:32
+msgid "Parent"
+msgstr "Ouder"
+
+#: easy-affiliate-links/helpers/taxonomies.php:23
+msgid "Popular"
+msgstr "Populaire"
+
+#: easy-affiliate-links/helpers/taxonomies.php:24
+msgid "All"
+msgstr "Alle"
+
+#: easy-affiliate-links/helpers/taxonomies.php:26
+msgid "Update"
+msgstr "Update"
+
+#: easy-affiliate-links/helpers/taxonomies.php:29
+msgid "Separate"
+msgstr "Scheidt"
+
+#: easy-affiliate-links/helpers/taxonomies.php:29
+msgid "with commas"
+msgstr "met komma's"
+
+#: easy-affiliate-links/helpers/taxonomies.php:30
+msgid "Add or remove"
+msgstr "Toevoegen of verwijderen"
+
+#: easy-affiliate-links/helpers/taxonomies.php:31
+msgid "Choose from the most used"
+msgstr "Kies uit de meest gebruikte"
+
+#: easy-affiliate-links/helpers/vafpress/vafpress_menu_options.php:7
+#: easy-affiliate-links/helpers/vafpress_menu.php:25
+#: easy-affiliate-links/helpers/vafpress_menu.php:26
+msgid "Settings"
+msgstr "Instellingen"
+
+#: easy-affiliate-links/helpers/vafpress/vafpress_menu_options.php:12
+msgid "General"
+msgstr "Algemeen"
+
+#: easy-affiliate-links/helpers/vafpress/vafpress_menu_options.php:18
+#: easy-affiliate-links/helpers/vafpress/vafpress_menu_options.php:24
+msgid "Slug"
+msgstr "Slug"
+
+#: easy-affiliate-links/helpers/vafpress/vafpress_menu_options.php:25
+msgid ""
+"Make sure to flush your permalinks after changing this. Direct links to the "
+"old slug will be broken."
+msgstr ""
+"Vergeet je permalinks niet te flushen als je dit wijzigt. Directe links "
+"naar de oude slug zullen niet meer werken."
+
+#: easy-affiliate-links/helpers/vafpress/vafpress_menu_options.php:41
+msgid "Defaults"
+msgstr "Standaardinstellingen"
+
+#: easy-affiliate-links/helpers/vafpress/vafpress_menu_options.php:47
+msgid "Default Target"
+msgstr "Standaard Doel"
+
+#: easy-affiliate-links/helpers/vafpress/vafpress_menu_options.php:65
+msgid "Default Redirect Type"
+msgstr "Standaard Redirect Type"
+
+#: easy-affiliate-links/helpers/vafpress/vafpress_menu_options.php:87
+msgid "Default Use Nofollow"
+msgstr "Standaard Gebruik Nofollow"
+
+#: easy-affiliate-links/helpers/vafpress/vafpress_menu_options.php:96
+msgid "Custom Code"
+msgstr "Eigen Code"
+
+#: easy-affiliate-links/helpers/vafpress/vafpress_menu_options.php:103
+msgid "Public CSS"
+msgstr "Publieke CSS"
+
+#: easy-affiliate-links/helpers/vafpress/vafpress_menu_options.php:111
+#: easy-affiliate-links/helpers/vafpress/vafpress_menu_options.php:120
+msgid "FAQ & Support"
+msgstr "FAQ & Support"
+
+#: easy-affiliate-links/helpers/vafpress/vafpress_menu_options.php:118
+msgid "Need more help?"
+msgstr "Meer hulp nodig?"
+
+#: easy-affiliate-links/helpers/vafpress_shortcode.php:18
+msgid "Shortcodes"
+msgstr "Shortcode"
+
+#: easy-affiliate-links/vendor/vafpress/bootstrap.php:88
+#: easy-affiliate-links/vendor/vafpress/classes/option.php:357
+#: easy-affiliate-links/vendor/vafpress/classes/option.php:382
+msgid "Successful"
+msgstr "Succesvol"
+
+#: easy-affiliate-links/vendor/vafpress/bootstrap.php:99
+msgid "Unauthorized function"
+msgstr ""
+
+#: easy-affiliate-links/vendor/vafpress/classes/metabox.php:35
+msgid "[Development Mode] "
+msgstr ""
+
+#: easy-affiliate-links/vendor/vafpress/classes/metabox.php:564
+#: easy-affiliate-links/vendor/vafpress/classes/metabox/alchemy.php:493
+msgid "Remove"
+msgstr ""
+
+#: easy-affiliate-links/vendor/vafpress/classes/metabox.php:586
+#: easy-affiliate-links/vendor/vafpress/classes/metabox/alchemy.php:515
+msgid "Add More"
+msgstr ""
+
+#: easy-affiliate-links/vendor/vafpress/classes/option.php:47
+#: easy-affiliate-links/vendor/vafpress/classes/option.php:48
+msgid "Vafpress Options"
+msgstr ""
+
+#: easy-affiliate-links/vendor/vafpress/classes/option.php:54
+msgid "Option Key is required"
+msgstr ""
+
+#: easy-affiliate-links/vendor/vafpress/classes/option.php:56
+msgid "Template Array/File is required"
+msgstr ""
+
+#: easy-affiliate-links/vendor/vafpress/classes/option.php:58
+msgid "Page Slug is required"
+msgstr ""
+
+#: easy-affiliate-links/vendor/vafpress/classes/option.php:160
+msgid ""
+"Development Mode is Active, options' values won't be saved into database."
+msgstr ""
+
+#: easy-affiliate-links/vendor/vafpress/classes/option.php:299
+msgid "Can not be empty"
+msgstr ""
+
+#: easy-affiliate-links/vendor/vafpress/classes/option.php:324
+msgid "Invalid data"
+msgstr ""
+
+#: easy-affiliate-links/vendor/vafpress/classes/option.php:387
+msgid "Unverified Access"
+msgstr ""
+
+#: easy-affiliate-links/vendor/vafpress/classes/option.php:453
+msgid "Invalid template supplied"
+msgstr ""
+
+#: easy-affiliate-links/vendor/vafpress/classes/option.php:466
+msgid "Utility"
+msgstr ""
+
+#: easy-affiliate-links/vendor/vafpress/classes/option.php:472
+#: easy-affiliate-links/vendor/vafpress/views/option/restore.php:13
+msgid "Restore Default"
+msgstr ""
+
+#: easy-affiliate-links/vendor/vafpress/classes/option.php:481
+msgid "Export/Import"
+msgstr ""
+
+#: easy-affiliate-links/vendor/vafpress/classes/option/control/set.php:359
+msgid "Saving successful"
+msgstr ""
+
+#: easy-affiliate-links/vendor/vafpress/classes/option/control/set.php:370
+msgid "Saving failed"
+msgstr ""
+
+#: easy-affiliate-links/vendor/vafpress/classes/option/control/set.php:376
+msgid "No changes made"
+msgstr ""
+
+#: easy-affiliate-links/vendor/vafpress/classes/shortcodegenerator.php:260
+msgid "Insert"
+msgstr ""
+
+#: easy-affiliate-links/vendor/vafpress/classes/shortcodegenerator.php:261
+msgid "Cancel"
+msgstr ""
+
+#: easy-affiliate-links/vendor/vafpress/config/messages.php:13
+msgid "Value needs to be Alphabet"
+msgstr ""
+
+#: easy-affiliate-links/vendor/vafpress/config/messages.php:14
+msgid "Value needs to be Alphanumeric"
+msgstr ""
+
+#: easy-affiliate-links/vendor/vafpress/config/messages.php:15
+msgid "Value needs to be Numeric"
+msgstr ""
+
+#: easy-affiliate-links/vendor/vafpress/config/messages.php:16
+msgid "Value needs to be Valid Email"
+msgstr ""
+
+#: easy-affiliate-links/vendor/vafpress/config/messages.php:17
+msgid "Value needs to be Valid URL"
+msgstr ""
+
+#: easy-affiliate-links/vendor/vafpress/config/messages.php:18
+msgid "Length needs to be less than {0} characters"
+msgstr ""
+
+#: easy-affiliate-links/vendor/vafpress/config/messages.php:19
+msgid "Length needs to be more than {0} characters"
+msgstr ""
+
+#: easy-affiliate-links/vendor/vafpress/config/messages.php:20
+msgid "Select no more than {0} items"
+msgstr ""
+
+#: easy-affiliate-links/vendor/vafpress/config/messages.php:21
+msgid "Select at least {0} items"
+msgstr ""
+
+#: easy-affiliate-links/vendor/vafpress/config/messages.php:22
+msgid "This is required"
+msgstr ""
+
+#: easy-affiliate-links/vendor/vafpress/config/messages.php:29
+msgid "Import succeed, option page will be refreshed.."
+msgstr ""
+
+#: easy-affiliate-links/vendor/vafpress/config/messages.php:30
+msgid "Import failed"
+msgstr ""
+
+#: easy-affiliate-links/vendor/vafpress/config/messages.php:31
+msgid "Export succeed, copy the JSON formatted options"
+msgstr ""
+
+#: easy-affiliate-links/vendor/vafpress/config/messages.php:32
+msgid "Export failed"
+msgstr ""
+
+#: easy-affiliate-links/vendor/vafpress/config/messages.php:33
+msgid "Restoration succeed, option page will be refreshed.."
+msgstr ""
+
+#: easy-affiliate-links/vendor/vafpress/config/messages.php:34
+msgid "Options identical to default"
+msgstr ""
+
+#: easy-affiliate-links/vendor/vafpress/config/messages.php:35
+msgid "Restoration failed"
+msgstr ""
+
+#: easy-affiliate-links/vendor/vafpress/config/messages.php:43
+msgid "Select option(s)"
+msgstr ""
+
+#: easy-affiliate-links/vendor/vafpress/config/messages.php:45
+msgid "Select an Icon"
+msgstr ""
+
+#: easy-affiliate-links/vendor/vafpress/views/control/upload.php:5
+msgid "Choose File"
+msgstr ""
+
+#: easy-affiliate-links/vendor/vafpress/views/option/impexp.php:4
+#: easy-affiliate-links/vendor/vafpress/views/option/impexp.php:14
+msgid "Import"
+msgstr ""
+
+#: easy-affiliate-links/vendor/vafpress/views/option/impexp.php:7
+msgid "Import Options"
+msgstr ""
+
+#: easy-affiliate-links/vendor/vafpress/views/option/impexp.php:27
+#: easy-affiliate-links/vendor/vafpress/views/option/impexp.php:37
+msgid "Export"
+msgstr ""
+
+#: easy-affiliate-links/vendor/vafpress/views/option/impexp.php:30
+msgid "Export Options"
+msgstr ""
+
+#: easy-affiliate-links/vendor/vafpress/views/option/restore.php:4
+msgid "Restore Default Options"
+msgstr ""
+
+#: easy-affiliate-links/vendor/vafpress/views/option/restore.php:7
+msgid "Restore options to initial default values."
+msgstr ""
+
+#: easy-affiliate-links/vendor/vafpress/views/option/restore.php:14
+msgid ""
+"** Please make sure you have already make a backup data of your current "
+"settings. Once you click this button, your current settings will be gone."
+msgstr ""
+
+#: easy-affiliate-links/vendor/vafpress/views/option/set.php:69
+#: easy-affiliate-links/vendor/vafpress/views/option/set.php:84
+msgid "Save Changes"
+msgstr ""
+
+#: easy-affiliate-links/vendor/vafpress/views/option/set.php:70
+#: easy-affiliate-links/vendor/vafpress/views/option/set.php:85
+msgid "Saving Now"
+msgstr ""
+
+#: easy-affiliate-links/vendor/vafpress/views/option/set.php:93
+#, php-format
+msgid ""
+"This option panel is built using <a href=\"http://vafpress.com/vafpress-"
+"framework\">Vafpress Framework %s</a> powered by <a href=\"http://vafpress."
+"com\">Vafpress</a>"
+msgstr ""
