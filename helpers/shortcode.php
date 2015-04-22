@@ -24,7 +24,9 @@ class EAFL_Shortcode {
             if( !is_null( $post ) && $post->post_type == EAFL_POST_TYPE ) {
                 $link = new EAFL_Link( $post );
 
-                $output = '<a href="' . get_permalink( $id ) . '" target="' . $link->target() . '">' . $link->text() . '</a>';
+                $nofollow = $link->nofollow() == 'nofollow' ? ' rel="nofollow"' : '';
+
+                $output = '<a href="' . get_permalink( $id ) . '" target="' . $link->target() . '"' . $nofollow . '>' . $link->text() . '</a>';
             }
         }
 
