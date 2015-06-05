@@ -29,7 +29,6 @@ EasyAffiliateLinks.updateLinkPreview = function() {
     jQuery('#eafl_link_preview').text( link );
 };
 
-
 EasyAffiliateLinks.addShortcode = function(id, name, text) {
     var tinymce_active = false;
     if(typeof(EasyAffiliateLinks.tinymce) !== 'undefined' && EasyAffiliateLinks.tinymce != null && !EasyAffiliateLinks.tinymce.isHidden()) {
@@ -52,6 +51,25 @@ EasyAffiliateLinks.addShortcode = function(id, name, text) {
         var val = el.value;
         el.value = val.slice(0, sel.start) + shortcode + val.slice(sel.end);
         jQuery(el).trigger('change');
+    }
+};
+
+EasyAffiliateLinks.editShortcode = function(id, name, text) {
+    var tinymce_active = false;
+    if(typeof(EasyAffiliateLinks.tinymce) !== 'undefined' && EasyAffiliateLinks.tinymce != null && !EasyAffiliateLinks.tinymce.isHidden()) {
+        tinymce_active = true;
+    }
+
+    var shortcode = '[eafl id=' + id + ' name="' + name.replace('"',"'") + '" text="' + text.replace('"',"'") + '"]';
+
+    if(tinymce_active) { // Visual Editor
+        var content = EasyAffiliateLinks.tinymce.getContent();
+
+        var re = new RegExp('\\[eafl[^\\]]*id="?\'?' + id +'[^\\]]*]', 'gi');
+        content = content.replace(re, shortcode);
+        EasyAffiliateLinks.tinymce.setContent(content);
+
+        EasyAffiliateLinks.tinymce.execCommand('mceRepaint');
     }
 };
 
@@ -92,6 +110,16 @@ jQuery(document).ready(function($) {
             var data = $(this).serialize();
             jQuery.post(eafl_admin.ajax_url, data, function(link) {
                 parent.EasyAffiliateLinks.addShortcode(link.ID, link.name, link.text);
+                parent.tb_remove();
+            }, 'json');
+        });
+
+        $('#eafl_edit_from_lightbox').on('submit', function(e) {
+            e.preventDefault();
+
+            var data = $(this).serialize();
+            jQuery.post(eafl_admin.ajax_url, data, function(link) {
+                parent.EasyAffiliateLinks.editShortcode(link.ID, link.name, link.text);
                 parent.tb_remove();
             }, 'json');
         });

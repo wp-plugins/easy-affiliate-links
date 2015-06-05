@@ -60,7 +60,7 @@
   }
 }
 
-#eafl_add_from_lightbox {
+#eafl_add_from_lightbox, #eafl_edit_from_lightbox {
   p.submit {
     text-align: right;
     margin-top: 0;
@@ -86,10 +86,4 @@
     &:nth-child(3) { width: 30%; }
     &:nth-child(4) { width: 20%; }
   }
-}
-
-.eafl_shortlink {
-  display: block;
-  font-size: 12px;
-  color: #666;
 }

@@ -37,7 +37,7 @@
     .eafl_form .eafl_radiobuttons td label {
       vertical-align: top; }
 
-#eafl_add_from_lightbox p.submit {
+#eafl_add_from_lightbox p.submit, #eafl_edit_from_lightbox p.submit {
   text-align: right;
   margin-top: 0;
   padding-right: 30px; }
@@ -60,8 +60,3 @@
       width: 30%; }
     #eafl_select_link td:nth-child(4) {
       width: 20%; }
-
-.eafl_shortlink {
-  display: block;
-  font-size: 12px;
-  color: #666; }

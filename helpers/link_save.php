@@ -6,6 +6,8 @@ class EAFL_Link_Save {
     {
         add_action( 'wp_ajax_add_easy_affiliate_link', array( $this, 'ajax_add_from_lightbox' ) );
         add_action( 'admin_post_add_easy_affiliate_link', array( $this, 'add_from_lightbox' ) );
+        add_action( 'wp_ajax_edit_easy_affiliate_link', array( $this, 'ajax_edit_from_lightbox' ) );
+        add_action( 'admin_post_edit_easy_affiliate_link', array( $this, 'edit_from_lightbox' ) );
         add_action( 'save_post', array( $this, 'save' ), 10, 2 );
     }
 
@@ -40,6 +42,44 @@ class EAFL_Link_Save {
         );
 
         return wp_insert_post( $post );
+    }
+
+    public function ajax_edit_from_lightbox()
+    {
+        if( check_ajax_referer( 'link', 'eafl_link_nonce', false ) )
+        {
+            $this->edit_link();
+
+            echo json_encode( array(
+                'name' => esc_attr( $_POST['eafl_name'] ),
+                'text' => esc_attr( $_POST['eafl_text'] ),
+                'ID' => esc_attr( $_POST['eafl_id'] ),
+            ) );
+        }
+
+        wp_die();
+    }
+
+    public function edit_from_lightbox()
+    {
+        if ( !isset( $_POST['eafl_link_nonce'] ) || !wp_verify_nonce( $_POST['eafl_link_nonce'], 'link' ) ) {
+            return;
+        }
+
+        $this->edit_link();
+    }
+
+    private function edit_link()
+    {
+        $link_id = intval( $_POST['eafl_id'] );
+
+        if( current_user_can( 'edit_post', $link_id ) ) {
+            $post = array(
+                'ID' => $link_id,
+            );
+
+            return wp_update_post( $post );
+        }
     }
 
     public function save( $post_id, $post )

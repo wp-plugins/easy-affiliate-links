@@ -7,6 +7,7 @@ class EAFL_Editor_Button
     {
         add_action( 'init', array( $this, 'filter_buttons' ) );
         add_action( 'wp_ajax_eafl_lightbox', array( $this, 'lightbox_content' ) );
+        add_action( 'wp_ajax_eafl_lightbox_edit', array( $this, 'lightbox_edit_content' ) );
     }
 
     public function filter_buttons()
@@ -67,5 +68,10 @@ class EAFL_Editor_Button
     public function lightbox_content()
     {
         include( EasyAffiliateLinks::get()->coreDir . '/helpers/editor_button_lightbox.php' );
+    }
+
+    public function lightbox_edit_content()
+    {
+        include( EasyAffiliateLinks::get()->coreDir . '/helpers/editor_button_lightbox_edit.php' );
     }
 }

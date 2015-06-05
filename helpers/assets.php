@@ -16,6 +16,10 @@ class EAFL_Assets {
     {
         $this->add(
             array(
+                'file' => '/css/admin.css',
+                'admin' => true
+            ),
+            array(
                 'file' => '/css/form.css',
                 'admin' => true
             ),

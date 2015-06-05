@@ -13,7 +13,7 @@
             text = text == null ? 'affiliate link' : text[1];
 
             data = window.encodeURIComponent( data );
-            return '<span style="border-bottom: 1px dashed #2980b9;" ' +
+            return '<span style="border-bottom: 1px dashed #2980b9; cursor: pointer;" ' +
                 'data-eafl-id="' + id[1] + '" data-eafl-shortcode="' + data + '">' + text + '</span>';
         }
 
@@ -42,7 +42,7 @@
                 // Don't trigger on right-click
                 if ( event.button !== 2 ) {
                     var id = dom.getAttrib( node, 'data-eafl-id' );
-                    // TODO Edit this affiliate link
+                    EasyAffiliateLinks.openLightboxEdit(editor, id);
                 }
             }
         });

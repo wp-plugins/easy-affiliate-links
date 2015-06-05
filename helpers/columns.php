@@ -11,6 +11,7 @@ class EAFL_Columns {
 
     public function columns( $columns ) {
         $columns['eafl_shortlink'] = __( 'Link', 'easy-affiliate-links' );
+        $columns['eafl_clicks'] = __( 'Clicks', 'easy-affiliate-links' );
 //        $columns['eafl_options'] = __( 'Target - Redirect - Nofollow', 'easy-affiliate-links' );
 
         return $columns;
@@ -23,6 +24,12 @@ class EAFL_Columns {
             case 'eafl_shortlink':
                 echo '<a href="' . $link->url() . '" target="_blank">' . $link->text() . '</a><br/>';
                 echo '<span class="eafl_shortlink">' . site_url( '/' . EasyAffiliateLinks::option( 'link_slug', 'recommends' ) . '/' . $link->slug() ) . '</span>';
+                break;
+
+            case 'eafl_clicks':
+                $summary = EasyAffiliateLinks::get()->helper( 'clicks' )->summary( $link->ID() );
+                echo $summary['month'] . ' <span class="eafl_clicks_label">' . __( 'This month', 'easy-affiliate-links' ) . '</span><br/>';
+                echo $summary['all'] . ' <span class="eafl_clicks_label">' . __( 'Lifetime', 'easy-affiliate-links' ) . '</span>';
                 break;
 
             case 'eafl_options':
@@ -48,6 +55,7 @@ class EAFL_Columns {
             'cb' => '<input type="checkbox" />',
             'title' => __( 'Name', 'easy-affiliate-links' ),
             'eafl_shortlink' => __( 'Link', 'easy-affiliate-links' ),
+            'eafl_clicks' => __( 'Clicks', 'easy-affiliate-links' ),
 //            'eafl_options' => __( 'Target - Redirect - Nofollow', 'easy-affiliate-links' ),
             'taxonomy-eafl_category' => __( 'Link Categories', 'easy-affiliate-links' ),
             'date' => __( 'Date', 'easy-affiliate-links' ),

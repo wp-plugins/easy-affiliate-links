@@ -17,6 +17,8 @@ class EAFL_Redirect {
             $url = $link->url();
             $redirect_type = $link->redirect_type();
 
+            EasyAffiliateLinks::get()->helper( 'clicks' )->register( $link );
+
             wp_redirect( $url, $redirect_type );
             exit();
         }

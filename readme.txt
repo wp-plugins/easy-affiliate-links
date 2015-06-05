@@ -19,6 +19,7 @@ Current features:
 *   Create **shortlinks** to cloak your affiliate links
 *   Easily access your links in the **visual and html editor**
 *   Assign **categories** to your links
+*   Tracking of monthly and lifetime **clicks**
 
 
 Upcoming features:
@@ -28,7 +29,7 @@ Upcoming features:
 *   A/B testing for link text
 *   Broken links checker
 
-Let us know if you have any requests at all!
+This plugin is under active development, so just let us know if you have any requests at all!
 
 == Installation ==
 
@@ -43,12 +44,25 @@ Just click on the blue URL icon in the Visual Editor or on "easy affiliate link"
 
 == Screenshots ==
 
+1. Manage all your affiliate links in one place with click statistics
+2. Full control over each affiliate link's options
+3. Easily add affiliate links to any post or page by clicking on the icon
+4. Just search and select the link you want to use to insert it
+5. Affiliate links are indicated with a blue line and can be edited with a simple click
+
 == Changelog ==
+
+= 1.0 =
+* Feature: Edit an affiliate link by clicking on it in the visual editor
+* Feature: Tracking of monthly and lifetime clicks
 
 = 0.0.1 =
 * Very first version of this plugin
 
 == Upgrade notice ==
+
+= 1.0 =
+Update for some new features
 
 = 0.0.1 =
 First version, no upgrades needed.
