@@ -12,7 +12,8 @@ class EAFL_Shortcode {
     public function shortcode( $options )
     {
         $options = shortcode_atts( array(
-            'id' => false
+            'id' => false,
+	        'text' => false,
         ), $options );
 
         $output = '';
@@ -25,8 +26,11 @@ class EAFL_Shortcode {
                 $link = new EAFL_Link( $post );
 
                 $nofollow = $link->nofollow() == 'nofollow' ? ' rel="nofollow"' : '';
+	            $url = rtrim( get_permalink( $id ), '/' );
 
-                $output = '<a href="' . get_permalink( $id ) . '" target="' . $link->target() . '"' . $nofollow . '>' . $link->text() . '</a>';
+	            $text = $options['text'] ? $options['text'] : $link->text()[0];
+
+                $output = '<a href="' . $url . '" target="' . $link->target() . '"' . $nofollow . '>' . $text . '</a>';
             }
         }
 

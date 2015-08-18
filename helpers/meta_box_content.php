@@ -10,12 +10,26 @@ if( is_null( $link ) ) $link = new EAFL_Link(0);
         <td><input type="text" name="eafl_name" id="eafl_name" value="<?php echo esc_attr( $link->name() ); ?>" /></td>
         <td><?php _e( 'Use this to identify the link.', 'easy-affiliate-links' ); ?> <?php _e( 'Not public.', 'easy-affiliate-links' ); ?></td>
     </tr>
+	<?php
+	foreach( $link->text() as $i => $text ) {
+		echo $i == 0 ? '<tr>' : '<tr class="eafl_variant_input">';
+
+		echo $i == 0 ? '<td><label for="eafl_text">' . __( 'Default Link Text', 'easy-affiliate-links' ) . '</label></td>' : '<td>&nbsp;</td>';
+
+		$id = $i == 0 ? ' id="eafl_text"' : '';
+		echo '<td><input type="text" name="eafl_text[]"' . $id . ' value="' . esc_attr( $text ) . '" /></td>';
+
+		echo $i == 0 ? '<td><label for="eafl_text">' . __( 'Text shown to visitors.', 'easy-affiliate-links' ) . '</label></td>' : '<td>&nbsp;</td>';
+
+		echo '</tr>';
+	}
+	?>
+	<tr class="eafl_divider eafl_variant">
+		<td>&nbsp;</td>
+		<td><a href="#"><?php _e( 'Add variant', 'easy-affiliate-links' ); ?></a></td>
+		<td>&nbsp;</td>
+	</tr>
     <tr>
-        <td><label for="eafl_text"><?php _e( 'Link Text', 'easy-affiliate-links' ); ?></label></td>
-        <td><input type="text" name="eafl_text" id="eafl_text" value="<?php echo esc_attr( $link->text() ); ?>" /></td>
-        <td><?php _e( 'Text shown to visitors.', 'easy-affiliate-links' ); ?></td>
-    </tr>
-    <tr class="eafl_divider">
         <td><label for="eafl_url"><?php _e( 'Link URL', 'easy-affiliate-links' ); ?></label></td>
         <td><input type="text" name="eafl_url" id="eafl_url" value="<?php echo esc_attr( $link->url() ); ?>" /></td>
         <td><?php _e( 'Final destination for the link.', 'easy-affiliate-links' ); ?> <?php _e( 'Starts with http:// or https://', 'easy-affiliate-links' ); ?></td>

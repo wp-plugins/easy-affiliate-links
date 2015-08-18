@@ -33,7 +33,7 @@ class EAFL_Cache {
     public function check_save_post( $id, $post )
     {
         if( $post->post_type == EAFL_POST_TYPE ) {
-            $this->reset();
+	        update_option( 'wpurp_cache', false );
         }
     }
 
@@ -78,11 +78,13 @@ class EAFL_Cache {
                     $categories = join( ', ', $category_terms );
                 }
 
+	            $text = get_post_meta( $id, 'eafl_text', true );
+
                 $links_by_date[] = array(
                     'ID' => $id,
                     'name' => $post->post_title,
                     'slug' => $post->post_name,
-                    'text' => get_post_meta( $id, 'eafl_text', true ),
+                    'text' => is_array( $text ) ? $text : array( $text ),
                     'url' => get_post_meta( $id, 'eafl_url', true ),
                     'categories' => $categories
                 );

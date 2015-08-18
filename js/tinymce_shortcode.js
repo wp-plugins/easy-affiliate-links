@@ -1,12 +1,14 @@
 (function() {
     tinymce.PluginManager.add('easy_affiliate_links_shortcode', function( editor, url ) {
         function replaceShortcodes( content ) {
+            var shortcode_id = 0;
             return content.replace( /\[eafl([^\]]*)\]/g, function( match ) {
-                return html( match );
+                shortcode_id++;
+                return html( match, shortcode_id );
             });
         }
 
-        function html( data ) {
+        function html( data, shortcode_id ) {
             var id = data.match(/id="?'?(\d+)/i);
             var text = data.match(/text="([^"]+)/i);
 
@@ -14,7 +16,7 @@
 
             data = window.encodeURIComponent( data );
             return '<span style="border-bottom: 1px dashed #2980b9; cursor: pointer;" ' +
-                'data-eafl-id="' + id[1] + '" data-eafl-shortcode="' + data + '">' + text + '</span>';
+                'data-eafl-id="' + id[1] + '" data-eafl-text="' + text + '" data-eafl-shortcode-id="' + shortcode_id + '" data-eafl-shortcode="' + data + '">' + text + '</span>';
         }
 
         function restoreShortcodes( content ) {
@@ -42,7 +44,10 @@
                 // Don't trigger on right-click
                 if ( event.button !== 2 ) {
                     var id = dom.getAttrib( node, 'data-eafl-id' );
-                    EasyAffiliateLinks.openLightboxEdit(editor, id);
+                    var text = dom.getAttrib( node, 'data-eafl-text' );
+                    var shortcode_id = dom.getAttrib( node, 'data-eafl-shortcode-id' );
+
+                    EasyAffiliateLinks.openLightboxEdit(editor, shortcode_id, id, text);
                 }
             }
         });

@@ -32,6 +32,7 @@ class EAFL_Post_Type {
                     'parent' => __( 'Parent', 'easy-affiliate-links' ) . ' ' . $singular,
                 ),
                 'public' => true,
+	            'exclude_from_search' => true,
                 'menu_position' => 20,
                 'supports' => false,
                 'taxonomies' => array(),

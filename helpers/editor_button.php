@@ -12,7 +12,7 @@ class EAFL_Editor_Button
 
     public function filter_buttons()
     {
-        if ( current_user_can( 'edit_posts' ) ) {
+        if ( current_user_can( EasyAffiliateLinks::option( 'editor_button_capability', 'edit_posts' ) ) ) {
             add_filter( 'mce_external_plugins', array( $this, 'add_button' ) );
             add_filter( 'mce_buttons', array( $this, 'register_button' ) );
 

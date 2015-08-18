@@ -57,12 +57,12 @@ class EAFL_Link {
 
     public function ID()
     {
-        return $this->post->ID;
+        return $this->post ? $this->post->ID : 0;
     }
 
     public function name()
     {
-        return $this->post->post_title;
+        return $this->post ? $this->post->post_title : '';
     }
 
     public function nofollow( $keep_default = false)
@@ -92,7 +92,7 @@ class EAFL_Link {
 
     public function slug()
     {
-        return $this->post->post_name;
+        return $this->post ? $this->post->post_name : '';
     }
 
     public function target( $keep_default = false)
@@ -107,7 +107,8 @@ class EAFL_Link {
 
     public function text()
     {
-        return $this->meta( 'eafl_text' );
+	    $text = maybe_unserialize( $this->meta( 'eafl_text' ) );
+        return is_array( $text ) ? $text : array( $text );
     }
 
     public function url()

@@ -11,10 +11,11 @@ class EAFL_Redirect {
     {
         $post = get_post();
 
-        if( $post->post_type == EAFL_POST_TYPE ) {
+        if( $post && $post->post_type == EAFL_POST_TYPE ) {
             $link = new EAFL_Link( $post );
 
             $url = $link->url();
+	        $url = str_replace( '@', '%40', $url );
             $redirect_type = $link->redirect_type();
 
             EasyAffiliateLinks::get()->helper( 'clicks' )->register( $link );

@@ -22,7 +22,8 @@ class EAFL_Columns {
 
         switch( $column ) {
             case 'eafl_shortlink':
-                echo '<a href="' . $link->url() . '" target="_blank">' . $link->text() . '</a><br/>';
+				$text = $link->text();
+                echo '<a href="' . $link->url() . '" target="_blank">' . $text[0] . '</a><br/>';
                 echo '<span class="eafl_shortlink">' . site_url( '/' . EasyAffiliateLinks::option( 'link_slug', 'recommends' ) . '/' . $link->slug() ) . '</span>';
                 break;
 

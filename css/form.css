@@ -14,11 +14,19 @@
       width: 50%;
       padding: 0 10px; }
       .eafl_form td:nth-child(2) input[type="text"] {
+        margin: 0;
         width: 100%; }
     .eafl_form td:nth-child(3) {
       width: 30%;
       font-size: 12px;
       color: #666; }
+  .eafl_form .eafl_variant td {
+    padding-top: 0;
+    height: 30px;
+    vertical-align: top; }
+  .eafl_form .eafl_variant_input td {
+    height: 36px;
+    vertical-align: top; }
   .eafl_form .eafl_divider td {
     border-bottom: 1px solid #ddd; }
   .eafl_form .eafl_link_preview td {
@@ -37,7 +45,7 @@
     .eafl_form .eafl_radiobuttons td label {
       vertical-align: top; }
 
-#eafl_add_from_lightbox p.submit, #eafl_edit_from_lightbox p.submit {
+#eafl_add_from_lightbox p.submit, #eafl_edit_from_lightbox p.submit, #eafl_tab_shortcode p.submit {
   text-align: right;
   margin-top: 0;
   padding-right: 30px; }
@@ -48,15 +56,14 @@
   #eafl_select_link th {
     text-align: left; }
   #eafl_select_link td {
-    vertical-align: top;
+    vertical-align: middle;
     border-top: 1px solid #ddd;
     padding: 4px 0; }
     #eafl_select_link td:nth-child(1) {
-      width: 10%;
-      vertical-align: middle; }
+      width: 20%; }
     #eafl_select_link td:nth-child(2) {
-      width: 40%; }
+      width: 50%; }
     #eafl_select_link td:nth-child(3) {
       width: 30%; }
-    #eafl_select_link td:nth-child(4) {
-      width: 20%; }
+    #eafl_select_link td .eafl_use_link {
+      width: 100%; }

@@ -25,5 +25,12 @@ class EAFL_Migration {
         }
 
         //if( $migrate_version < '0.0.1' ) require_once( EasyAffiliateLinks::get()->coreDir . '/helpers/migration/0_0_1_example_migration.php');
+
+	    // Each version update once
+	    if( $migrate_version < EAFL_VERSION ) {
+		    EasyAffiliateLinks::get()->helper( 'cache' )->reset(); // Reset cache
+
+		    update_option( 'eafl_migrate_version', EAFL_VERSION );
+	    }
     }
 }

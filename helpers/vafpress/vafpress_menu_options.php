@@ -89,6 +89,20 @@ $admin_menu = array(
                         ),
                     ),
                 ),
+	            array(
+		            'type' => 'section',
+		            'title' => __( 'Permissions', 'easy-affiliate-links' ),
+		            'name' => 'general_section_permissions',
+		            'fields' => array(
+			            array(
+				            'type' => 'textbox',
+				            'name' => 'editor_button_capability',
+				            'label' => __('Shortcode Button Capability', 'easy-affiliate-links'),
+				            'description' => __( 'Only users with this role or capability can see the shortcode button in the editor.', 'easy-affiliate-links' ),
+				            'default' => 'edit_posts',
+			            ),
+		            ),
+	            ),
             ),
         ),
 //=-=-=-=-=-=-= CUSTOM CODE =-=-=-=-=-=-=

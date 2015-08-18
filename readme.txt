@@ -52,6 +52,16 @@ Just click on the blue URL icon in the Visual Editor or on "easy affiliate link"
 
 == Changelog ==
 
+= 1.1 =
+Feature: Use custom link text in the shortcode
+Feature: Define multiple link text variants
+Setting: Set required capability for seeing the shortcode button
+Fix: Exclude affiliate links from search to prevent redirect
+Fix: A few unwanted PHP notices
+Fix: Cache update after saving an affiliate link
+Fix: @ sign in mailto urls
+Fix: Removed trailing slash in URLs for consistency
+
 = 1.0 =
 * Feature: Edit an affiliate link by clicking on it in the visual editor
 * Feature: Tracking of monthly and lifetime clicks
@@ -60,6 +70,9 @@ Just click on the blue URL icon in the Visual Editor or on "easy affiliate link"
 * Very first version of this plugin
 
 == Upgrade notice ==
+
+= 1.1 =
+Update recommend, some new features and bug fixes
 
 = 1.0 =
 Update for some new features

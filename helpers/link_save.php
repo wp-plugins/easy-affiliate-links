@@ -17,7 +17,7 @@ class EAFL_Link_Save {
         {
             echo json_encode( array(
                 'name' => esc_attr( $_POST['eafl_name'] ),
-                'text' => esc_attr( $_POST['eafl_text'] ),
+                'text' => esc_attr( $_POST['eafl_text'][0] ),
                 'ID' => $this->create_link(),
             ) );
         }
@@ -52,7 +52,7 @@ class EAFL_Link_Save {
 
             echo json_encode( array(
                 'name' => esc_attr( $_POST['eafl_name'] ),
-                'text' => esc_attr( $_POST['eafl_text'] ),
+                'text' => esc_attr( $_POST['eafl_text'][0] ),
                 'ID' => esc_attr( $_POST['eafl_id'] ),
             ) );
         }
@@ -115,9 +115,15 @@ class EAFL_Link_Save {
                 $new = isset( $_POST[$field] ) ? $_POST[$field] : null;
 
                 // Field specific adjustments
-                if( isset( $new ) && $field == 'link_prefix' ) {
+                if( isset( $new ) && $field == 'eafl_slug' ) {
                     $new = $this->convertToSlug( $new );
                 }
+	            if( isset( $new ) && $field == 'eafl_text' ) {
+		            $new = array_values( array_filter( $new ) );
+		            if( empty( $new ) ) {
+			            $new = array( '' );
+		            }
+	            }
 
                 // Update or delete meta data if changed
                 if( isset( $new ) && $new != $old ) {

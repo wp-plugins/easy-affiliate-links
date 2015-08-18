@@ -3,12 +3,12 @@
 Plugin Name: Easy Affiliate Links
 Plugin URI: http://bootstrapped.ventures
 Description: Easily manage and cloak all your affiliate links.
-Version: 1.0
+Version: 1.1
 Author: Bootstrapped Ventures
 Author URI: http://bootstrapped.ventures
 License: GPLv2
 */
-define( 'EAFL_VERSION', '1.0' );
+define( 'EAFL_VERSION', '1.1' );
 define( 'EAFL_POST_TYPE', 'easy_affiliate_link' );
 
 class EasyAffiliateLinks {
