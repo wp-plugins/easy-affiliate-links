@@ -28,7 +28,8 @@ class EAFL_Shortcode {
                 $nofollow = $link->nofollow() == 'nofollow' ? ' rel="nofollow"' : '';
 	            $url = rtrim( get_permalink( $id ), '/' );
 
-	            $text = $options['text'] ? $options['text'] : $link->text()[0];
+	            $text = $link->text();
+	            $text = $options['text'] ? $options['text'] : $text[0];
 
                 $output = '<a href="' . $url . '" target="' . $link->target() . '"' . $nofollow . '>' . $text . '</a>';
             }
